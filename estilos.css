@@ -1,0 +1,119 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
+body{
+	background-color:rgba(1,12,29,1.00);
+	font-family: 'Caveat Brush';
+	align-items: center;
+	align-content: center;
+	text-align: center;
+}
+a:link
+{
+text-decoration:none;
+} 
+.titulo{
+	font-size: 120px;
+	align-self: center;
+	color: ghostwhite;
+	background-color: rgba(0,0,0,0.62);
+}
+.contenedorGrid{
+	width: 80%;
+	margin: 0 auto;
+	background: url(Imagenes/fondo1.jpg);
+	-moz-background-size: 100%;
+    -webkit-background-size: 100%;
+	-o-background-size: 100%;
+	background-repeat: repeat-y;
+	
+}
+.grid {
+	width: 90%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 45%);
+	grid-template-rows: repeat(3, 450px);
+	grid-gap: 55px;
+	justify-elements: stretch;
+	margin-left: auto;
+    margin-right: auto;
+	
+}
+.a{
+	background-image: url("Imagenes/v2placaJuego1.png");
+	background-size: 100%;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+	-o-background-size: 100%;
+	background-repeat: no-repeat;
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+.b{
+	background-image: url("Imagenes/v2placaJuego2.png");
+	background-size: 100%;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+	-o-background-size: 100%;
+	background-repeat: no-repeat;
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+.c{
+	background-image: url("Imagenes/v3placaJuego3.png");
+	background-size: 100%;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+	-o-background-size: 100%;
+	background-repeat: no-repeat;
+	grid-column: 1/2;
+	grid-row: 2/3;
+}
+.d{
+	background-image: url("Imagenes/placa.png");
+	background-size: 100%;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+	-o-background-size: 100%;
+	background-repeat: no-repeat;
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+.e{
+	background-image: url("Imagenes/placa.png");
+	background-size: 100%;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+	-o-background-size: 100%;
+	background-repeat: no-repeat;
+	grid-column: 1/2;
+	grid-row: 3/4;
+}
+.f{
+	background-image: url("Imagenes/placa.png");
+	background-size: 100%;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+	-o-background-size: 100%;
+	background-repeat: no-repeat;
+	grid-column: 2/3;
+	grid-row: 3/4;
+}
+#boton{
+	font-family: 'Caveat Brush';
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: none;
+	font-size: 0px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+}
+#boton:hover{
+	/*background:radial-gradient(ellipse farthest-corner, rgba(255,252,252,0.23), transparent );*/
+	background: linear-gradient( rgba(255,252,252,0.23), transparent);
+	font-size: 150px;
+	color: black;
+}
+

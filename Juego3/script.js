@@ -1,3 +1,4 @@
+var person;
 var x = 350;
 var y = 250;
 var vida = 0;
@@ -19,6 +20,8 @@ $(document).ready(inicio);
 $(document).keydown(capturaTeclado);
 
 function inicio(){
+	person = prompt("Por favor ingrese un nombre de usuario", " ");
+	document.getElementById("nombreUsuario").value = person;
 	var lienzo = $("#lienzo")[0];
 	var contexto = lienzo.getContext("2d");
 	var buffer = document.createElement("canvas");

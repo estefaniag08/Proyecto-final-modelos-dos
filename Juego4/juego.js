@@ -16,10 +16,13 @@ var tiempo;
 var puntos;
 var puntuacion;
 var nivel = 0;
+var person;
 
 var comprobaciones="abcdefghijklmnñopqrstuvwxyz";
 
 function inicializar(){
+	person = prompt("Por favor ingrese un nombre de usuario", " ");
+	document.getElementById("nombreUsuario").value = person;
 	cargarPalabras();
 	puntos = 0;
 	puntuacion = 0;

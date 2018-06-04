@@ -12,6 +12,29 @@ body{
 	text-align: center;
 	align-items: center;
 }
+input{
+	height: 20px;
+	border: none;
+	background-color: snow;
+	font-family: 'Aladin';
+	font-size: 30px;
+	text-align: center;
+}
+button{
+	height: 30px;
+	font-family: 'Aladin';
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	border-radius: 5px;
+	color: antiquewhite;
+	background-color: rgba(104,71,71,1.00);
+}
+button:hover{
+	color: rgba(104,71,71,1.00);
+	background-color: antiquewhite;
+}
 .pintura {
 	background: #CCFFCC;
 	background-image: url(1.png);
@@ -75,4 +98,7 @@ body{
 	text-decoration: none;
 	font-family: 'Aladin';
 	font-size: 20px;
+}
+#nombreUsuario, #puntaje{
+	display: none;
 }

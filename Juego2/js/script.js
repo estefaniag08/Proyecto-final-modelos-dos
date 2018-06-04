@@ -1,10 +1,13 @@
 
 var jugando;
+var person;
 
 $(document).ready(inicio);
 $(document).keydown(capturaTeclado);
 
 function inicio(){
+	person = prompt("Por favor ingrese un nombre de usuario", " ");
+	document.getElementById("nombreUsuario").value = person;
 	jugando = false;
 	miCanvas = $("#mi_canvas")[0];
 	contexto = miCanvas.getContext("2d");

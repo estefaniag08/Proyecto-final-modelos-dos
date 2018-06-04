@@ -14,12 +14,14 @@ var antImg = 1;
 var i,j, puntaje;
 var profesoresMalos;		//Arreglo con todos los profesores malos que hay
 var profesoresBuenos;	//Arreglo con todos profesores buenos
-
+var person; 			//Nombre de usuario
 
 $(document).ready(inicializar);						//Se inicia la ejecucion con la funcion inicializar
 $(document).keydown(botones);						//Se tiene un event listener de teclado
 
 function inicializar(){
+	person = prompt("Por favor ingrese un nombre de usuario", " ");
+	document.getElementById("nombreUsuario").value = person;
 	jugando = false;
 	profesoresMalos = [new profesorMalo(0), new profesorMalo(1), new profesorMalo(0), new profesorMalo(1),new profesorMalo(0),new profesorMalo(1),new profesorMalo(0),new profesorMalo(1), new profesorMalo(0), new profesorMalo(1)];
 	profesoresBuenos = [ new profesorBueno(0), new profesorBueno(0), new profesorBueno(0), new profesorBueno(0), new profesorBueno(1), new profesorBueno(1)];
@@ -65,7 +67,7 @@ function estudiante(){
 	this.inicio = function(){
 		posX=450;		//Inicializamos valores de posicion y vida
 		posY=250;
-		vidaEst=10000;
+		vidaEst=1000;
 		puntaje=0;
 	};
 	//Dibuja el estudiante en la nueva posicion
@@ -313,7 +315,7 @@ function run(){
 			profesoresMalos[i].moverEnemigo();
 			if(est.colision(profesoresMalos[i].xEnemigo,profesoresMalos[i].yEnemigo)){
 				vidaEst= vidaEst-1;
-				puntaje = puntaje-1;
+				puntaje = puntaje-0.5;
 			}
 		}
 		for (i=0; i<profesoresBuenos.length; i++){
@@ -321,11 +323,11 @@ function run(){
 			profesoresBuenos[i].moverAliado();
 			if(est.colision(profesoresBuenos[i].xAliado, profesoresBuenos[i].yAliado)){
 				vidaEst = vidaEst+1;
-				puntaje = puntaje+1;
+				puntaje = puntaje+2;
 				
 			}
 		}
-		if(vidaEst<=0){
+		if(vidaEst<=0 || puntaje<-10){
 			jugando=false;
 		}									
 		contexto.clearRect(0,0,elCanvas.width,elCanvas.height);	//Se limpia el rectangulo del contexto del canvas del html

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ahorcado</title>
+	<link href="estilos.css" rel="stylesheet" type="text/css">	
+</head>
+<body>
+	<section class="pinturaComponente">
+		<div class="a">
+			<canvas id="lienzo" width="400" height="400" class="pintura">
+				Este navegador no puede ejecutar este contenido :(
+			</canvas>
+		</div>
+		<div class="b">
+			<canvas id="casillas" width="610" height="200" class="pinturaCasillas">
+				Este navegador no puede ejecutar este contenido :(
+			</canvas>
+		</div>
+		<div id="newGame">
+			<button id="reiniciar" class="botonOculto">Nuevo juego</button>
+			<button id="subir" class="botonOculto">Subir nivel</button>
+		</div>
+		<input type="text" id="contenedor" onkeypress="comprobar(event)">
+	</section>
+	<section class="contenedorTiempo">
+		<div class="cTiempo">
+			<canvas id="time" width="400" height="100">
+				Ups! Me dañe :(
+			</canvas>
+		</div>
+		<div class="barraNavegacion">
+			<nav class="navegador">
+				<ul>
+					<li><a href="../home.html">Página principal</a></li>
+					<li><a href="../puntajes.html">Puntajes</a></li>
+					<li><a href="#">Créditos</a></li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+	<script type="text/javascript" src="juego.js"></script>
+</body>
+</html>

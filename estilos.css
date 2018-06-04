@@ -102,7 +102,7 @@ text-decoration:none;
 	grid-row: 2/3;
 }
 .d{
-	background-image: url("Imagenes/placa.png");
+	background-image: url(Imagenes/placaJuego4.png);
 	background-size: 100%;
     -moz-background-size: 100%;
     -webkit-background-size: 100%;
@@ -112,7 +112,7 @@ text-decoration:none;
 	grid-row: 2/3;
 }
 .e{
-	background-image: url("Imagenes/placa.png");
+	background-image: url(Imagenes/placaJuego5.png);
 	background-size: 100%;
     -moz-background-size: 100%;
     -webkit-background-size: 100%;

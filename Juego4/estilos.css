@@ -1,0 +1,78 @@
+@charset "utf-8";
+@import url('http://fonts.googleapis.com/css?family=Aladin');
+body{
+	background-image: url(7.jpg);
+	background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+	font-family: 'Aladin';
+	font-size: 40px;
+	color:brown;
+	text-align: center;
+	align-items: center;
+}
+.pintura {
+	background: #CCFFCC;
+	background-image: url(1.png);
+}
+.pinturaCasillas {
+	background: #CCFFCC;
+	background-image: url(fondoBordev2.png);
+}
+.pinturaComponente {
+	width: 60%;
+	height: 100%;
+	display: grid;
+	margin: 0 auto;
+	grid-template-rows: 80% 20%;
+	background-color: rgba(0,0,0,0.9);
+	border: 20px solid transparent;
+	border-image: url(fondoBorde.png) 30%;
+
+}
+.a{
+	grid-row: 1/2;
+}
+.b{
+	grid-row: 2/3;
+}
+.botonOculto {
+	display: none;
+}
+
+.botonMostrar {
+	display: inline;
+}
+.contenedorTiempo{
+	background-image: url(fondoBordev2.png);
+	align-content: center;
+	align-items: center;
+	margin: 0 auto;
+	width: 62.1%;
+}
+.navegador ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.navegador ul li{
+	width: 33.3%;
+	height: 30px;
+	background-color: antiquewhite;
+	position: relative;
+	float: left;
+	margin:0;
+	padding: 0;
+	text-align: center;
+}
+.navegador ul li:hover{
+	background-color: wheat;
+}
+.navegador ul a{
+	display: block;
+	color: brown;
+	text-decoration: none;
+	font-family: 'Aladin';
+	font-size: 20px;
+}

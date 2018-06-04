@@ -1,0 +1,47 @@
+ body{
+	background-image: url(https://c.pxhere.com/photos/58/29/background_negative_dark-824442.jpg!d);
+	 background-size: cover;
+	 background-repeat: repeat-y;
+ }
+ canvas{
+     border: 1px outset #000000; background-color:white;
+ }
+.ejecucion{
+    background: rgba(158,198,194,1);
+    background: -moz-linear-gradient(45deg, rgba(158,198,194,1) 0%, rgba(34,73,70,1) 87%, rgba(18,56,53,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(158,198,194,1)), color-stop(87%, rgba(34,73,70,1)), color-stop(100%, rgba(18,56,53,1)));
+    background: -webkit-linear-gradient(45deg, rgba(158,198,194,1) 0%, rgba(34,73,70,1) 87%, rgba(18,56,53,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(158,198,194,1) 0%, rgba(34,73,70,1) 87%, rgba(18,56,53,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(158,198,194,1) 0%, rgba(34,73,70,1) 87%, rgba(18,56,53,1) 100%);
+    background: linear-gradient(45deg, rgba(158,198,194,1) 0%, rgba(34,73,70,1) 87%, rgba(18,56,53,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ec6c2', endColorstr='#123835', GradientType=1 );
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.navegador ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.navegador ul li{
+	width: 33.3%;
+	height: 50px;
+	background-color: whitesmoke;
+	position: relative;
+	float: left;
+	margin:0;
+	padding: 0;
+	text-align: center;
+}
+.navegador ul li:hover{
+	background-color: snow;
+}
+.navegador ul a{
+	display: block;
+	color: green;
+	text-decoration:none;
+	font-size: 20px;
+}
+.barraNavegacion{
+	width: 90.1%;
+}

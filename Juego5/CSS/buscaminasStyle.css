@@ -45,3 +45,6 @@
 .barraNavegacion{
 	width: 90.1%;
 }
+#nombreUsuario, #puntaje{
+	display: none;
+}

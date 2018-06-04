@@ -20,6 +20,7 @@ var jugando = true;
 var aleatorioi;
 var aleatorioj;
 var vacio= new Image();
+var person;
 bien.src = "img/bien.png";
 perdio.src = "img/perdio.png";
 victoria.src = "img/victoria.png";
@@ -61,6 +62,8 @@ generarTablero();
 var contadorBanderas = 99;
 //dibuja apenas carga la ventana, dibuja los botones
 window.onload = function(){
+	person = prompt("Por favor ingrese un nombre de usuario", " ");
+	document.getElementById("nombreUsuario").value = person;
 	dibujar();
 	click();
 }

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+	<!--
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	-->
+	
+    <title>Pasa el semestre</title>
+</head>
+<style>
+    body {
+    
+         background-color: #cccccc;
+    }
+    h1 {
+        text-align: center;
+    }
+    #cuadrado{
+        margin:20px;
+        border: solid 10px blue;
+        
+        position: absolute;
+    }
+    #mover{
+        margin:20px;
+        width:30px;
+        height:30px;
+        position: absolute;
+
+    }
+    #puerta{
+        margin:20px;
+        height: 30px;
+        position: absolute;
+        align-items: center;    
+    }
+	#profe1{
+        margin:20px;
+        width:30px;
+        height:30px;
+        position: absolute;
+
+    }
+	#profe2{
+        margin:20px;
+        width:30px;
+        height:30px;
+        position: absolute;
+
+    }
+	#profe3{
+        margin:20px;
+        width:30px;
+        height:30px;
+        position: absolute;
+
+    }
+	#profe4{
+        margin:20px;
+        width:30px;
+        height:30px;
+        position: absolute;
+
+    }
+	#profe5{
+        margin:20px;
+        width:30px;
+        height:30px;
+        position: absolute;
+
+    }
+	#profe6{
+        margin:20px;
+        width:30px;
+        height:30px;
+        position: absolute;
+
+    }
+	#profe7{
+        margin:20px;
+        width:30px;
+        height:30px;
+        position: absolute;
+
+    }
+	#profe8{
+        margin:20px;
+        width:30px;
+        height:30px;
+        position: absolute;
+
+    }
+	#teclado{
+		position:absolute; top:120px;
+		position:absolute; bottom:20px;
+		position:absolute; left:1070px;
+		position:absolute; right:20p;
+	}
+	#instrucciones{
+		position:absolute; top:300px;
+		position:absolute; bottom:20px;
+		position:absolute; left:1070px;
+		position:absolute; right:20p;
+	}
+	#instruccionesprofe{
+		position:absolute; top:300px;
+		position:absolute; bottom:20px;
+		position:absolute; left:20px;
+		position:absolute; right:20p;
+	}
+	.navegador ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;	
+	}
+	.navegador ul li{
+		width: 33.3%;
+		height: 50px;
+		background-color: whitesmoke;
+		position: relative;
+		float: left;
+		margin:0;
+		padding: 0;
+		text-align: center;
+	}
+	.navegador ul li:hover{
+		background-color: snow;
+	}
+	.navegador ul a{
+		display: block;
+		color: green;
+		text-decoration:none;
+		font-size: 20px;
+	}
+	#nombreUsuario{
+		display: none;
+	}
+	footer{
+		position:absolute; top:600px;
+	}
+	#nombreUsuario, #puntaje{
+		display: none;
+	}
+	
+</style>
+
+<body>
+    <h1>Pasa tu carrera</h1>
+    <br>
+	<h2 id = "CuentaAtras"></h2>
+    <div>
+        <img src="img/Lives3.png" id="vidas"  width="200" height="150">
+		<img src="img/teclado.png" id="teclado"  width="250" height="150">
+		<img src="img/instrucciones.png" id="instrucciones"  width="200" height="300">
+		<img src="img/instruccionprofe.png" id="instruccionesprofe"  width="150" height="280">
+    </div>
+    <div id="cuadrado"></div>
+    
+    <div id="puerta">
+        <img id="puerta1" src="img/puerta1.png"  width="90" height="90" >
+        <img id="puerta2" src="img/puerta1.png"  width="90" height="90" >
+        <img id="puerta3" src="img/puerta1.png"  width="90" height="90" >
+        <img id="puerta4" src="img/puerta1.png"  width="90" height="90" >
+        <img id="puerta5" src="img/puerta1.png"  width="90" height="90" >
+        <img id="puerta6" src="img/puerta1.png"  width="90" height="90" >
+        <img id="puerta7" src="img/puerta1.png"  width="90" height="90" >
+        <img id="puerta8" src="img/puerta1.png"  width="90" height="90" >
+
+    </div>
+	
+	<div id = "profe1"><img id="profeimg0"  width="70" height="70"/></div>
+	<div id = "profe2"><img id="profeimg1" width="70" height="70"/></div>
+	<div id = "profe3"><img id="profeimg2" width="70" height="70"/></div>
+	<div id = "profe4"><img id="profeimg3" width="70" height="70"/></div>
+	<div id = "profe5"><img id="profeimg4" width="70" height="70"/></div>
+	<div id = "profe6"><img id="profeimg5" width="70" height="70"/></div>
+	<div id = "profe7"><img id="profeimg6" width="70" height="70"/></div>
+	<div id = "profe8"><img id="profeimg7" width="70" height="70"/></div>
+    <div id="mover">  <img id="personaje"  alt="PJ" id="imagen" ></div>
+    <script type="text/javascript" src="scriptJuego.js"></script>
+    <footer>
+		<div class="barraNavegacion">
+			<nav class="navegador">
+				<ul>
+					<li><a href="../home.html">Página principal</a></li>
+					<li><a href="../puntajes.html">Puntajes</a></li>
+					<li><a href="#">Créditos</a></li>
+				</ul>
+			</nav>
+		</div>
+  		<button id="puntajeBoton">Enviar Puntaje</button>
+   		<input id="nombreUsuario" type="text"> 
+   		<input id="puntaje" type="text">	
+    </footer>
+</body>
+</html>

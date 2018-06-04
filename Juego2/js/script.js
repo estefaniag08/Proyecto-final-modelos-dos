@@ -5,16 +5,14 @@ $(document).ready(inicio);
 $(document).keydown(capturaTeclado);
 
 function inicio(){
-	jugando = true;
+	jugando = false;
 	miCanvas = $("#mi_canvas")[0];
 	contexto = miCanvas.getContext("2d");
 	buffer = document.createElement("canvas");
 	quica = new Quica();
 	calacas = [new Calaca(), new Calaca(),
 				   new Calaca(), new Calaca(),
-				   new Calaca()];
-	run();	
-	
+				   new Calaca()];	
 	$('#instrucciones').click(function(){
         $('#popup').fadeIn('slow');
         $('.popup-overlay').fadeIn('slow');
@@ -29,8 +27,12 @@ function inicio(){
     });
     
     $("#iniciar").click(function(){	
-		if(jugando==false)
-			inicio();	
+		if(jugando===false){
+			jugando=true;
+			run();	
+		}
+			
+			
 	});
 }
 

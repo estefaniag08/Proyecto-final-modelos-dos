@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="jquery-1.11.0.js"></script>
+	<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="profesores.js"></script>
+	<link href="estilos.css" rel="stylesheet" type="text/css">
+	<title>JuegoProfesoresCuchillas</title>
+</head>
+
+<body>
+	<aside>
+		<img id="img1F" class="imagen" src="Imagen/1FrenteG.png">
+		<img id="img2F" class="imagen" src="Imagen/2FrenteG.png">
+		<img id="img3F" class="imagen" src="Imagen/3FrenteG.png">
+		<img id="img1A" class="imagen" src="Imagen/1ArribaG.png">
+		<img id="img2A" class="imagen" src="Imagen/2ArribaG.png">
+		<img id="img3A" class="imagen" src="Imagen/3ArribaG.png">
+		<img id="img1I" class="imagen" src="Imagen/1IzqG.png">
+		<img id="img2I" class="imagen" src="Imagen/2IzqG.png">
+		<img id="img3I" class="imagen" src="Imagen/3IzqG.png">
+		<img id="img1D" class="imagen" src="Imagen/1DerG.png">
+		<img id="img2D" class="imagen" src="Imagen/2DerG.png">
+		<img id="img3D" class="imagen" src="Imagen/3DerG.png">
+		<img id="imgPB1-I" class="imagen" src="Imagen/ProfesoresBuenos/PB1-I.png">
+		<img id="imgPB1-D" class="imagen" src="Imagen/ProfesoresBuenos/PB1-D.png">
+		<img id="imgPB2-A" class="imagen" src="Imagen/ProfesoresBuenos/PB2-A.png">
+		<img id="imgPB2-F" class="imagen" src="Imagen/ProfesoresBuenos/PB2-F.png">
+		<img id="imgPC1-I" class="imagen" src="Imagen/ProfesoresMalos/PC1-I.png">
+		<img id="imgPC1-D" class="imagen" src="Imagen/ProfesoresMalos/PC1-D.png">
+		<img id="imgPC2-A" class="imagen" src="Imagen/ProfesoresMalos/PC2-A.png">
+		<img id="imgPC2-F" class="imagen" src="Imagen/ProfesoresMalos/PC2-F.png">
+	</aside>
+	<section id="titulo">
+		<img id="tituloJuego" src="Imagen/Cool Text.png">
+	</section>
+	<div id="grid">
+		<section id="seccionInstrucciones">
+			<div id="contenedorInstrucciones">
+				<div id="instrucciones">
+					<div> PROFESORES </div>
+					<img src="Imagen/Animacion/buenop.gif">
+					<div> Profesor Bueno</div>
+					<img src="Imagen/Animacion/malo1p.gif">
+					<div> Profesor Cuchilla</div>
+					<br>
+					<div> CONTROLES </div>
+					<img src="Imagen/arrows.png">
+					<img src="Imagen/wasd.png">
+					<button id="iniciarBoton" class="boton">Iniciar Juego</button>
+					<button id="reiniciarBoton" class="boton" onClick="document.location.reload();">Reiniciar Juego</button>
+					<br>
+					<div> CRÉDITOS </div>
+					<div id="creditos"> Estefanía Garcia Gonzalez - Edwin Aarón Garcia Pulido  2018 - Universidad Distrital</div>
+					<div class="barraNavegacion">
+						<nav class="navegador">
+							<ul>
+								<li><a href="../home.html">Página principal</a></li>
+								<li><a href="../puntajes.html">Puntajes</a></li>
+								<li><a href="#">Créditos</a></li>
+							</ul>
+
+						</nav>
+					</div>	
+				</div>
+			</div>
+		</section>
+		<section id="contenedorPrincipal">
+			<div id="contenedorCanvas">
+				<canvas id="lienzo" width="1200" height="800">
+					Tu navegador no es compatible
+				</canvas>
+			</div>
+		</section>
+	</div>
+	
+</body>
+
+</html>

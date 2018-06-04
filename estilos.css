@@ -122,7 +122,7 @@ text-decoration:none;
 	grid-row: 3/4;
 }
 .f{
-	background-image: url("Imagenes/placa.png");
+	background-image: url(Imagenes/placaJuego6.png);
 	background-size: 100%;
     -moz-background-size: 100%;
     -webkit-background-size: 100%;
@@ -166,5 +166,8 @@ text-decoration:none;
 	background: linear-gradient( rgba(255,252,252,0.23), transparent);
 	font-size: 82px;
 	color: black;
+}
+#nombreUsuario{
+	display: none;
 }
 
